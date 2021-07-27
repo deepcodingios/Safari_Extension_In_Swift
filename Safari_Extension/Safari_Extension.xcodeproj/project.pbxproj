@@ -13,7 +13,36 @@
 		27B9853E26AFAD6A008D0EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B9853C26AFAD6A008D0EDD /* Main.storyboard */; };
 		27B9854026AFAD6D008D0EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B9853F26AFAD6D008D0EDD /* Assets.xcassets */; };
 		27B9854326AFAD6D008D0EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B9854126AFAD6D008D0EDD /* LaunchScreen.storyboard */; };
+		27B9855126AFB3CD008D0EDD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B9855026AFB3CD008D0EDD /* Media.xcassets */; };
+		27B9855326AFB3CD008D0EDD /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B9855226AFB3CD008D0EDD /* ActionViewController.swift */; };
+		27B9855626AFB3CD008D0EDD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B9855426AFB3CD008D0EDD /* MainInterface.storyboard */; };
+		27B9855A26AFB3CD008D0EDD /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27B9854E26AFB3CD008D0EDD /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27B9856026AFB738008D0EDD /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 27B9855F26AFB738008D0EDD /* Action.js */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27B9855826AFB3CD008D0EDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B9852B26AFAD6A008D0EDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B9854D26AFB3CD008D0EDD;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27B9855B26AFB3CD008D0EDD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				27B9855A26AFB3CD008D0EDD /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27B9853326AFAD6A008D0EDD /* Safari_Extension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safari_Extension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +53,23 @@
 		27B9853F26AFAD6D008D0EDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27B9854226AFAD6D008D0EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27B9854426AFAD6D008D0EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B9854E26AFB3CD008D0EDD /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B9855026AFB3CD008D0EDD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		27B9855226AFB3CD008D0EDD /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		27B9855526AFB3CD008D0EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		27B9855726AFB3CD008D0EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B9855F26AFB738008D0EDD /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		27B9853026AFAD6A008D0EDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B9854B26AFB3CD008D0EDD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				27B9853526AFAD6A008D0EDD /* Safari_Extension */,
+				27B9854F26AFB3CD008D0EDD /* Extension */,
 				27B9853426AFAD6A008D0EDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				27B9853326AFAD6A008D0EDD /* Safari_Extension.app */,
+				27B9854E26AFB3CD008D0EDD /* Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +111,18 @@
 			path = Safari_Extension;
 			sourceTree = "<group>";
 		};
+		27B9854F26AFB3CD008D0EDD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				27B9855026AFB3CD008D0EDD /* Media.xcassets */,
+				27B9855226AFB3CD008D0EDD /* ActionViewController.swift */,
+				27B9855426AFB3CD008D0EDD /* MainInterface.storyboard */,
+				27B9855726AFB3CD008D0EDD /* Info.plist */,
+				27B9855F26AFB738008D0EDD /* Action.js */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +133,34 @@
 				27B9852F26AFAD6A008D0EDD /* Sources */,
 				27B9853026AFAD6A008D0EDD /* Frameworks */,
 				27B9853126AFAD6A008D0EDD /* Resources */,
+				27B9855B26AFB3CD008D0EDD /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				27B9855926AFB3CD008D0EDD /* PBXTargetDependency */,
 			);
 			name = Safari_Extension;
 			productName = Safari_Extension;
 			productReference = 27B9853326AFAD6A008D0EDD /* Safari_Extension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		27B9854D26AFB3CD008D0EDD /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B9855E26AFB3CD008D0EDD /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				27B9854A26AFB3CD008D0EDD /* Sources */,
+				27B9854B26AFB3CD008D0EDD /* Frameworks */,
+				27B9854C26AFB3CD008D0EDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 27B9854E26AFB3CD008D0EDD /* Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +172,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					27B9853226AFAD6A008D0EDD = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					27B9854D26AFB3CD008D0EDD = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -115,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				27B9853226AFAD6A008D0EDD /* Safari_Extension */,
+				27B9854D26AFB3CD008D0EDD /* Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +206,16 @@
 				27B9854326AFAD6D008D0EDD /* LaunchScreen.storyboard in Resources */,
 				27B9854026AFAD6D008D0EDD /* Assets.xcassets in Resources */,
 				27B9853E26AFAD6A008D0EDD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B9854C26AFB3CD008D0EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B9856026AFB738008D0EDD /* Action.js in Resources */,
+				27B9855126AFB3CD008D0EDD /* Media.xcassets in Resources */,
+				27B9855626AFB3CD008D0EDD /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +232,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27B9854A26AFB3CD008D0EDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B9855326AFB3CD008D0EDD /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27B9855926AFB3CD008D0EDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B9854D26AFB3CD008D0EDD /* Extension */;
+			targetProxy = 27B9855826AFB3CD008D0EDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27B9853C26AFAD6A008D0EDD /* Main.storyboard */ = {
@@ -160,6 +265,14 @@
 				27B9854226AFAD6D008D0EDD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		27B9855426AFB3CD008D0EDD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B9855526AFB3CD008D0EDD /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,6 +397,7 @@
 		27B9854826AFAD6D008D0EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +417,7 @@
 		27B9854926AFAD6D008D0EDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +429,44 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.trianglelabs.Safari-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27B9855C26AFB3CD008D0EDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFQLNBK6QB;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trianglelabs.Safari-Extension.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27B9855D26AFB3CD008D0EDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFQLNBK6QB;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.trianglelabs.Safari-Extension.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,6 +489,15 @@
 			buildConfigurations = (
 				27B9854826AFAD6D008D0EDD /* Debug */,
 				27B9854926AFAD6D008D0EDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B9855E26AFB3CD008D0EDD /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B9855C26AFB3CD008D0EDD /* Debug */,
+				27B9855D26AFB3CD008D0EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
